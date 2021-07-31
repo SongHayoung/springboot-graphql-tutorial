@@ -1,5 +1,5 @@
 ## Srping Boot GraphQL Tutorials
-This repository is intended to help you understand the graphql Guide uploaded on [my personal blog](https://songhayoung.github.io/).
+This repository is intended to help understand the GraphQL Guide uploaded on [my personal blog](https://songhayoung.github.io/).
 
 ![version](https://img.shields.io/badge/version-0.0.2-orange) ![Java](https://img.shields.io/badge/Java-8-blue) ![MIT](https://img.shields.io/badge/License-MIT-red) [![Author](https://img.shields.io/badge/Author-Sumfi-brightgreen)](https://songhayoung.github.io/about/)
 
