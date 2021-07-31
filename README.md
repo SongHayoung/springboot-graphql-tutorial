@@ -33,5 +33,5 @@ This repository is intended to help you understand the graphql Guide uploaded on
 [#14 Schema Based Validation](https://songhayoung.github.io/2021/07/31/GraphQL/graphql-14/)
 
 ### maven
-- com.graphql-java v17.0.1-beta1
-- com.graphql-java-kickstart 11.1.0
+- com.graphql-java <sup>**v17.0.1-beta1**</sup>
+- com.graphql-java-kickstart <sup>**v11.1.0**</sup>
