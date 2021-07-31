@@ -1,0 +1,49 @@
+# 웹툰 가져오기
+query GET_WEBTOON($id: ID!) {
+    webToon(id: $id) { # WebToonResolver
+        id
+        title
+        webToonType
+        image { # ImageResolver
+            thumbnail
+            imageList
+        }
+        bgm { # BgmResolver
+            url
+        }
+    }
+}
+
+# 웹툰 에피소드 가져오기
+query GET_WEBTOON_AND_EPISODES($id: ID!, $episodeNos: [NonNegativeInt!]!) {
+    webToon(id: $id) {
+        id
+        title
+        webToonType
+        episodes(episodeNos: $episodeNos) {
+            episodeNo
+            title
+            releaseDate
+        }
+    }
+}
+
+# 웹툰 페이지네이션
+query GET_WEBTOONS_PAGINATION {
+    webtoons(first: 2) {
+        edges {
+            cursor
+            node {
+                id
+                title
+                webToonType
+            }
+        }
+        pageInfo {
+            hasPreviousPage
+            hasNextPage
+            startCursor
+            endCursor
+        }
+    }
+}

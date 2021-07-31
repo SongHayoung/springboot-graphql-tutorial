@@ -1,0 +1,17 @@
+# 웹툰 등록하기
+mutation CREATE_WEBTOON($webToonInput: WebToonInput!) {
+    createWebToon(input: $webToonInput) {
+        id
+        title
+        webToonType
+    }
+}
+
+# 웹툰 업데이트
+mutation UPDATE_WEBTOON($id: ID!, $title: String!) {
+    updateWebtoon(id: $id, title: $title) {
+        id
+        title
+        webToonType
+    }
+}

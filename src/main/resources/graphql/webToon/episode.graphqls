@@ -1,0 +1,5 @@
+type Episode {
+    episodeNo: ID!
+    title: String
+    releaseDate: Date
+}

@@ -1,0 +1,4 @@
+input WebToonInput {
+    title: String!
+    webToonType: WebToonType!
+}

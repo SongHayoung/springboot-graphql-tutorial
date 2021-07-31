@@ -1,0 +1,4 @@
+type Image {
+    thumbnail: String!
+    imageList: [String]
+}

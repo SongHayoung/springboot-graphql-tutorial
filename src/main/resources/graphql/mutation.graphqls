@@ -1,0 +1,7 @@
+type Mutation {
+    #웹툰 등록
+    createWebToon(input: WebToonInput!): WebToon!
+    updateWebtoon(id: ID!, title: String! @NotBlank(message: "updateWebtoon.title")): WebToon!
+    #파일 업로드
+    uploadFile: ID!
+}

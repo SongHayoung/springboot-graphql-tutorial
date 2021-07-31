@@ -1,0 +1,9 @@
+type WebToon {
+    id: ID!
+    webToonType: WebToonType
+    title: String
+    image: Image
+    bgm: Bgm
+    episodes(episodeNos: [NonNegativeInt!]!): [Episode]
+    starscore: Float
+}

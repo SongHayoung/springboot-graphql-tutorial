@@ -1,0 +1,8 @@
+scalar Date
+scalar NonNegativeInt
+
+# 웹툰 정보 가져오기
+type Query {
+    webToon(id: ID!): WebToon
+    webtoons(first: Int!, after: String): WebToonConnection @connection (for: "WebToon")
+}
